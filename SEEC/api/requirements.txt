@@ -1,6 +1,0 @@
-Flask==2.2.2
-flask-cors==2.0.0
-werkzeug==2.2.2
-flask-limiter==2.6.0
-flask-talisman==0.8.0
-pulp==2.7.0
