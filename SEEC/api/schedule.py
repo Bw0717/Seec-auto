@@ -14,8 +14,8 @@ talisman = Talisman(app)
 talisman.init_app(app, content_security_policy=None)
 
 # 添加速率限制
-limiter = Limiter(get_remote_address, app=app, default_limits=["200 per day", "50 per hour"])
-
+limiter = Limiter(get_remote_address, default_limits=["200 per day", "50 per hour"])
+limiter.init_app(app)
 logging.basicConfig(level=logging.INFO)
 
 @app.before_request
